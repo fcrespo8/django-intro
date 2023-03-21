@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>To do List</title>
-</head>
-<body>
-  <h1>Lista de tareas</h1>
-</body>
-</html>
+{% extends 'todo/layout.html' %}
+
+{% block body %}
+
+	<h1>Lista de tareas</h1>
+	<ul>
+	{% for tarea in tareas %}
+		<li>{{tarea}}</li>
+	{% endfor %}
+	</ul>
+
+	<a href="{% url 'add' %}">Agregar Tarea</a>
+
+{% endblock %}
