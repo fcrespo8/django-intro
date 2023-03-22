@@ -24,3 +24,7 @@ class Programador(models.Model):
 
 	def __str__(self):
 		return self.nombre
+
+
+# https://docs.djangoproject.com/en/3.1/topics/db/queries/
+# Page for different types of queries
